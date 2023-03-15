@@ -13,6 +13,10 @@
 		B30469BC298FEFC30017F667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30469BB298FEFC30017F667 /* Assets.xcassets */; };
 		B30469BF298FEFC30017F667 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30469BE298FEFC30017F667 /* Preview Assets.xcassets */; };
 		B30469CC298FF2600017F667 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30469CB298FF2600017F667 /* HealthManager.swift */; };
+		B370DA2E29C1FFB400F475C1 /* AppleWatchHomePage.png in Resources */ = {isa = PBXBuildFile; fileRef = B370DA2D29C1FFB400F475C1 /* AppleWatchHomePage.png */; };
+		B370DA2F29C1FFB400F475C1 /* AppleWatchHomePage.png in Resources */ = {isa = PBXBuildFile; fileRef = B370DA2D29C1FFB400F475C1 /* AppleWatchHomePage.png */; };
+		B370DA3129C1FFC400F475C1 /* AppleWatchRunView.png in Resources */ = {isa = PBXBuildFile; fileRef = B370DA3029C1FFC400F475C1 /* AppleWatchRunView.png */; };
+		B370DA3229C1FFC400F475C1 /* AppleWatchRunView.png in Resources */ = {isa = PBXBuildFile; fileRef = B370DA3029C1FFC400F475C1 /* AppleWatchRunView.png */; };
 		B3F97FFB299FD9F2004EED49 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F97FFA299FD9F2004EED49 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,9 @@
 		B30469C9298FF0A70017F667 /* Watch HealthKit Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch HealthKit Watch App.entitlements"; sourceTree = "<group>"; };
 		B30469CA298FF1A00017F667 /* Watch-HealthKit-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Watch-HealthKit-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B30469CB298FF2600017F667 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		B370DA2D29C1FFB400F475C1 /* AppleWatchHomePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleWatchHomePage.png; sourceTree = "<group>"; };
+		B370DA3029C1FFC400F475C1 /* AppleWatchRunView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleWatchRunView.png; sourceTree = "<group>"; };
+		B3EE8ACD29C1FC9600872BC5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B3F97FFA299FD9F2004EED49 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +74,9 @@
 		B30469A5298FEFC20017F667 = {
 			isa = PBXGroup;
 			children = (
+				B3EE8ACD29C1FC9600872BC5 /* README.md */,
+				B370DA2D29C1FFB400F475C1 /* AppleWatchHomePage.png */,
+				B370DA3029C1FFC400F475C1 /* AppleWatchRunView.png */,
 				B30469B6298FEFC20017F667 /* Watch HealthKit Watch App */,
 				B30469AD298FEFC20017F667 /* Products */,
 			);
@@ -183,6 +193,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B370DA2E29C1FFB400F475C1 /* AppleWatchHomePage.png in Resources */,
+				B370DA3129C1FFC400F475C1 /* AppleWatchRunView.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30469BF298FEFC30017F667 /* Preview Assets.xcassets in Resources */,
+				B370DA3229C1FFC400F475C1 /* AppleWatchRunView.png in Resources */,
 				B30469BC298FEFC30017F667 /* Assets.xcassets in Resources */,
+				B370DA2F29C1FFB400F475C1 /* AppleWatchHomePage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
