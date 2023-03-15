@@ -6,18 +6,38 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
+    
+    @StateObject var vm = HealthManager()
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        if vm.state == .inactive {
+            VStack {
+                
+                Text("Furious")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                Button("Start Run") {
+                    guard
+                        HKHealthStore.isHealthDataAvailable() else { return }
+                    vm.start()
+                 }
+             }
+        } else {
+                    WorkoutView(vm: vm)
+                }
+                
+                
+                
+            }
+            
         }
-        .padding()
-    }
-}
+    
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

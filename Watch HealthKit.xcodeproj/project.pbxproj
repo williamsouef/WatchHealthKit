@@ -12,6 +12,8 @@
 		B30469BA298FEFC20017F667 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30469B9298FEFC20017F667 /* ContentView.swift */; };
 		B30469BC298FEFC30017F667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30469BB298FEFC30017F667 /* Assets.xcassets */; };
 		B30469BF298FEFC30017F667 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30469BE298FEFC30017F667 /* Preview Assets.xcassets */; };
+		B30469CC298FF2600017F667 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30469CB298FF2600017F667 /* HealthManager.swift */; };
+		B3F97FFB299FD9F2004EED49 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F97FFA299FD9F2004EED49 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,10 @@
 		B30469B9298FEFC20017F667 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B30469BB298FEFC30017F667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30469BE298FEFC30017F667 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B30469C9298FF0A70017F667 /* Watch HealthKit Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch HealthKit Watch App.entitlements"; sourceTree = "<group>"; };
+		B30469CA298FF1A00017F667 /* Watch-HealthKit-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Watch-HealthKit-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B30469CB298FF2600017F667 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		B3F97FFA299FD9F2004EED49 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,11 @@
 		B30469B6298FEFC20017F667 /* Watch HealthKit Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				B30469CA298FF1A00017F667 /* Watch-HealthKit-Watch-App-Info.plist */,
+				B30469C9298FF0A70017F667 /* Watch HealthKit Watch App.entitlements */,
 				B30469B7298FEFC20017F667 /* Watch_HealthKitApp.swift */,
+				B30469CB298FF2600017F667 /* HealthManager.swift */,
+				B3F97FFA299FD9F2004EED49 /* WorkoutView.swift */,
 				B30469B9298FEFC20017F667 /* ContentView.swift */,
 				B30469BB298FEFC30017F667 /* Assets.xcassets */,
 				B30469BD298FEFC30017F667 /* Preview Content */,
@@ -193,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30469BA298FEFC20017F667 /* ContentView.swift in Sources */,
+				B30469CC298FF2600017F667 /* HealthManager.swift in Sources */,
+				B3F97FFB299FD9F2004EED49 /* WorkoutView.swift in Sources */,
 				B30469B8298FEFC20017F667 /* Watch_HealthKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,12 +334,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Watch HealthKit Watch App/Watch HealthKit Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Watch HealthKit Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Watch-HealthKit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Watch HealthKit";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read the data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to update the data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -351,12 +367,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Watch HealthKit Watch App/Watch HealthKit Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Watch HealthKit Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Watch-HealthKit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Watch HealthKit";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need to read the data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need to update the data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
